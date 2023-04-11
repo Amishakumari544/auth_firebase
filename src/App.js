@@ -26,7 +26,7 @@ return(
             <Routes>
             <Route path="/" element={<Home name={userName} />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/login" element={<Login />} />
+             {userName === null ? <Route path="/login" element={<Login />} />:<Route path="/login" element={<Login />} />} 
             </Routes>
           </div>
         </section>

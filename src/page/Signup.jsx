@@ -7,7 +7,7 @@ import { auth } from "../firebase";
 
 import styles from "./login.module.css";
 
-function Signup() {
+const Signup = () => {
   const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",

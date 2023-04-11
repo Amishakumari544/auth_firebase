@@ -7,7 +7,7 @@ import { auth } from "../firebase";
 
 import styles from "./login.module.css";
 
-function Login() {
+const Login = () => {
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -65,6 +65,7 @@ function Login() {
             <span>
               <Link to="/signup">Sign up</Link>
             </span>
+            
           </p>
         </div>
       </div>
